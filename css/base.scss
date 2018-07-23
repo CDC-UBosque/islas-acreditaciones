@@ -604,7 +604,7 @@ text-align: left;
 
 .content-inner-logo{
 	position: absolute;
-    top: 2%;
+    top: 8%;
     left: 2%;
     
     @media only screen and (max-width: 1264px){
@@ -662,7 +662,7 @@ text-align: left;
 	
 	@media only screen and (max-width: 745px){
 	    width: 95%;
-	    margin-top: 2.3rem;
+	    margin-top: 5.3rem;
 	    padding-left: 0;
 	}
 	
@@ -702,9 +702,12 @@ text-align: left;
 	}
 	
 	div{
-	    display: inline-block;
-	    width: 41%;
+		display: inline-block;
+	    width: 48%;
 	    vertical-align: top;
+	    //border: 1px solid;
+	    padding-right: 20px;
+	    box-sizing: border-box;
 	    
 	    @media only screen and (max-width: 745px){
 		    width: 100%
@@ -736,27 +739,36 @@ text-align: left;
 }
 
 .content__close {
-	position: absolute;
-    top: 6%;
-    left: 45%;
+	position: fixed;
+    top: 0;
     background: none;
     color: var(--color-link);
-    /* border: 1px solid; */
     padding: 0;
     display: block;
-    /* width: 4em; */
-    /* height: 4em; */
-    /* font-size: 1.25em; */
-    /* border-radius: 50%; */
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.3s;
-        display: flex;
+    display: inline-block;
     border: 0;
     letter-spacing: 5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-items: unset;
+    background: #1f232a;
+    padding: 0.7rem 0;
+        z-index: 1;
+    
+    svg{
+	    display: inline-block;
+	    margin-right: 0;
+	    position: relative;
+	    top: 0.2rem;
+    }
 	
 	@media only screen and (max-width: 590px){
-		bottom: 7%;
+		//bottom: 7%;
 	}
 }
 
